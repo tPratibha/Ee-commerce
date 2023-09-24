@@ -1,0 +1,427 @@
+<html>
+  <style>
+    
+
+
+      
+      .nav,a{
+        display:inline;
+        text-decoration:none;
+        color:black;
+        font-family:bold;
+        font-size: 18px;
+        margin:4px;
+      }
+      li{
+        display:inline;
+        text-decoration:none;
+        color:black;
+        font-family:bold;
+        font-size: 18px;
+        padding:12px;
+        
+      }
+      .nav input[type=text] {
+        
+       margin-left:50px;
+        border: grey;
+        font-size: 20px;
+        width:30%;
+        box-sizing:border-box;
+        margin-top:13px;
+
+            }
+            
+            
+      .nav input[type=text] {
+        border:grey;  
+      }
+      
+     
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+      }
+      
+      .navbar {
+        overflow: hidden;
+        background-color:white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color:black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .dropdown {
+        float: left;
+        overflow: hidden;
+
+      
+      }
+      
+      .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font: inherit;
+        margin: 40%;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn {
+
+        text-decoration:underline;
+
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 7
+        0%;
+        
+        left: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin:3%;
+        margin-left:7.5%;
+        
+      }
+      
+      .dropdown-content .header {
+        background:none;
+        padding: 16px;
+        color: white;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        background-color:none;
+        height: 100%;
+      }
+      h3{
+        color:red;
+        margin:5px;
+      }
+      
+      .column a {
+        float: none;
+        color: black;
+        padding: 14px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        margin:2px;
+
+
+      }
+      
+      .column a:hover {
+        background-color: #ddd;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+
+        display: table;
+        clear: both;
+      }
+      .i{
+        float:right;
+
+        margin-right:3px;
+
+      }
+      /*icons*/
+      div.gallery {
+        margin: 1px;
+        border: none;
+        float: right;
+        width: 50px
+      }
+      
+      div.gallery:hover {
+        border: none;
+      }
+      
+      div.gallery img {
+        width: 50%;
+        height: auto;
+      }
+      
+      div.desc {
+        text-align: center;
+        font-size:13px;
+        margin-top:20px; 
+        font-family:bold solid black;
+      }
+    
+      
+
+
+      .pra{
+        width:250px;
+        height:260px;
+        display:inline;
+        
+
+      
+    
+         background-image: url("/static/bac_image.jpg");
+
+      }
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 50%;
+          height: auto;
+        }
+      }
+      .slideshow-container {
+  max-width: 6000px;
+  position: relative;
+  margin: 1px;
+  padding:1px;
+}
+/*button (view all)*/
+.button {
+  background-color:black;
+  text-align:center;
+  margin:auto;
+  border: none;
+  color: white;
+  
+  padding: 10px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:8px;
+}
+h4{
+  font-size:26px;
+  font-family:"Times New Roman", Times, serif;
+
+  color:solid black;
+  margin:1.5px;
+}
+p{
+  
+ /* font-family: "Lucida Console", Monaco, monospace;*/
+ font:Italic 22px bold monospace;
+  color:black;
+    
+
+}
+/* Next & previous buttons */
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+img{
+  width:1200px;
+  height:400px;
+  margin-top:1px;
+}
+.icon{
+  width:23px;
+  height:22px;
+  margin-top:1px;
+}
+
+/*images down*/
+
+
+.ro::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col{
+  float: left;
+        width: 20%;
+        padding: 1px;
+        
+        
+
+}
+/*description*/
+
+.descrip{
+  font:Pacifico 20px;
+  margin:1px;
+  
+}
+/*down h3:top brand*/
+.down h3{
+ margin-left:2px;
+  font:24px solid black;
+}
+/* round images*/
+.bac{
+   width:170px;
+  height:150px;
+  display:inline;
+
+   background-color:blue;
+ border:5px solid;
+ /* border-style: dashed;*/
+  border-width: 10px;
+   border-style: ridge;
+  
+   Border-color: ;
+}
+</style>
+</html>
+
+
+
+<body>
+  </center>
+<div class="ro">
+  <div class="col">
+  <a >
+    <img class="Pra" src="/static/tshirt1.jpg" alt="Cinque Terre" >
+  </a>
+  <div class="descrip" style=" margin-left:20px;">      <b>Highlender</b><br>Mens casual shirt<br>&#8377 250
+    </div>
+</div>
+<div class="col">
+  <a >
+    <img class="Pra" src="/static/tshirt 2.jpg" alt="Cinque Terre" >
+  </a>
+  <div class="descrip" style=" margin-left:20px;"><b>Roadster</b><br>Mens solid plain blue shirt<br>&#8377 250
+    </div>
+</div>
+
+
+<div class="col">
+  <a>
+    <img class="pra" src="/static/tshirt 3.jpg" alt="Forest" >
+  </a>
+  <div class="descrip"  style=" margin-left:20px;"><b>Highlender</b><br>Mens plain casual shirt<br>&#8377 250
+    </div>
+</div>
+        
+       
+        
+<div class="col">
+  <a>
+    <img class="pra" src="/static/tshirt 4.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style=" margin-left:20px;"><b>Highlender</b><br>contrast casual shirt<br>&#8377 450</div>
+</div>
+<div class="col">
+  <a>
+    <img class="pra" src="/static/casual.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style=" margin-left:20px;"><b>Roadster</b><br>black&white lining shirt<br>&#8377 550</div>
+</div>
+</div>
+        
+       
+  <div class="ro">      
+<div class="col">
+  <a>
+    <img class="pra" src="/static/tshirt 6.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style=" margin-left:20px;"><b>Roadster</b><br>solid black shirt<br>&#8377 550</div>
+</div>
+
+
+<div class="col">
+  <a>
+    <img class="pra" src="/static/tshirt 7.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style=" margin-left:20px;"><b>KETCH</b><br>slim fit casual shirt<br>&#8377 600</div>
+</div>
+<div class="col">
+  <a>
+    <img class="pra" src="/static/tshirt 8.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style=" margin-left:20px;"><b>PUMA</b><br>dashing black shirt <br>&#8377 750</div>
+</div>
+
+<div class="col">
+  <a>
+    <img class="pra" src="/static/tshirt 9.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style=" margin-left:20px;"><b>Roadster</b><br>black casual shirt<br>&#8377 500</div>
+</div>
+<div class="col">
+  <a>
+    <img class="pra" src="/static/tshirts.webp" alt="Forest" >
+  </a>
+  <div class="descrip" style=" margin-left:20px;"><b>KELVIN</b><br>trendy blue tshirt<br>&#8377 850</div>
+</div>
+
+
+
+</div>
+
+
+
+</body>

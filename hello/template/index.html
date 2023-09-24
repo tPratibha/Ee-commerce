@@ -1,0 +1,1495 @@
+<html>
+  <head>
+
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script  src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+  
+
+    <style>
+      .logo{
+        height:35px;
+        width:80px;
+        
+      }
+      i{
+        float:right;
+        margin-right:40px;
+        margin-top:1px;
+        text-decoration:none;
+        
+
+
+      }
+      .nav,a{
+        display:inline;
+        text-decoration:none;
+        color:black;
+        font-family:bold;
+        font-size: 18px;
+        margin:4px;
+      }
+      li{
+        display:inline;
+        text-decoration:none;
+        color:black;
+        font-family:bold;
+        font-size: 18px;
+        padding:12px;
+        
+      }
+      .nav input[type=text] {
+        
+       margin-left:50px;
+        border: grey;
+        font-size: 20px;
+        width:30%;
+        box-sizing:border-box;
+        margin-top:13px;
+
+            }
+            
+            
+      .nav input[type=text] {
+        border:grey;  
+      }
+      
+     
+      * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        margin: 0;
+      }
+      
+      .navbar {
+        overflow: hidden;
+        background-color:white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color:black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .dropdown {
+        float: left;
+        overflow: hidden;
+
+      
+      }
+      .dropdown_profile{
+         float:right;
+        overflow: hidden;
+
+      }
+      
+      .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font: inherit;
+        margin: 40%;
+      }
+      .dropdown_profile .dropbtn 
+      {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font: inherit;
+        margin: 40%;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn {
+
+        text-decoration:underline;
+
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 7
+        0%;
+        
+        left: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin:3%;
+        margin-left:7.5%;
+        
+      }
+      .dropdown-content_profile{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 20%;
+        height:
+        50%;
+        
+        right: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin:2
+        %;
+        margin-top:40px;
+        
+       
+            }
+      
+      .dropdown-content .header {
+        background:none;
+        padding: 16px;
+        color: white;
+      }
+      .dropdown-content_profile .header{
+        background:none;
+        padding: 16px;
+        color: white;
+
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .dropdown_profile:hover .dropdown-content_profile{
+        display: block;
+
+      }
+      .profile-a
+      {
+        display:inline;
+        margin-left:1px;
+        color:red;
+
+        
+        
+      }
+      
+      /* Create three equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        background-color:none;
+        height: 100%;
+      }
+      h3{
+        color:red;
+        margin:5px;
+      }
+      
+      .column a {
+        float: none;
+        color: black;
+        padding: 14px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+        margin:2px;
+
+
+      }
+      
+      
+      .column a:hover {
+        background-color: #ddd;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+
+        display: table;
+        clear: both;
+      }
+      .i{
+        float:right;
+
+        margin-right:3px;
+
+      }
+      /*icons*/
+      div.gallery {
+        margin: 1px;
+        border: none;
+        float: right;
+        width: 50px;
+      }
+      
+      div.gallery:hover {
+        border: none;
+      }
+      
+      div.gallery img {
+        width: 50%;
+        height: auto;
+      }
+      
+      div.desc {
+        text-align: center;
+        font-size:13px;
+        margin-top:20px; 
+        font-family:bold solid black;
+      }
+    
+      
+
+
+      .pra{
+        width:180px;
+        height:170px;
+        display:inline;
+      
+    
+         background-image: url("/static/bac_image.jpg");
+
+      }
+      /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 50%;
+          height: auto;
+        }
+      }
+      .slideshow-container {
+  max-width: 6000px;
+  position: relative;
+  margin: 1px;
+  padding:1px;
+}
+/*button (view all)*/
+.button {
+  background-color:black;
+  text-align:center;
+  margin:auto;
+  border: none;
+  color: white;
+  
+  padding: 10px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius:8px;
+}
+h4{
+  font-size:26px;
+  font-family:"Times New Roman", Times, serif;
+
+  color:solid black;
+  margin:1.5px;
+}
+p{
+  
+ /* font-family: "Lucida Console", Monaco, monospace;*/
+ font:Italic 22px bold monospace;
+  color:black;
+    
+
+}
+/* Next & previous buttons */
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+img{
+  width:1200px;
+  height:400px;
+  margin-top:1px;
+}
+.icon{
+  width:23px;
+  height:22px;
+  margin-top:1px;
+}
+
+/*images down*/
+
+
+.ro::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col{
+  float: left;
+        width: 12.5%;
+        padding: 4px;
+        
+        
+
+}
+/*description*/
+
+.descrip{
+  font:Pacifico 20px;
+  margin:1px;
+  
+}
+/*down h3:top brand*/
+.down h3{
+ margin-left:2px;
+  font:24px solid black;
+}
+/* round images*/
+.bac{
+   width:180px;
+  height:170px;
+  display:inline;
+
+   background-color:blue;
+ border:5px solid;
+ /* border-style: dashed;*/
+  border-width: 10px;
+   border-style: ridge;
+  
+   Border-color: ;
+
+
+}
+/*descrition in last images*/
+.discription{
+  margin-left:2px;
+  font:24px;
+
+}
+/*last images*/
+figure {
+  border: 1px #cccccc solid;
+  padding: -50px;
+  margin:3px;
+   box-shadow: 10px 10px #F9E6E6;
+    background-color:white;
+
+}
+
+figcaption {
+  position:relative;
+  background-color:#f8f8ff ;
+  color:black;
+  font-style: italic;
+  padding: 10px;
+  text-align: center;
+  height:70px;
+  width:150px;
+  display:block;
+  margin:-80px;
+  border-radius:7%;
+
+  z-index:1;
+  
+  
+}
+figcaption:hover{
+  cursor:pointer;
+  background-color:#e5ccc9;
+}
+/*list */
+.a{
+  font-family:verdana;
+  font-size:12px;
+  margin-left:-30px;
+}
+/*footer*/
+.footer{
+  margin-top:5px;
+  width:100%;
+  padding:100px 15%;
+  background:#333;
+  color:#efefef;
+  display:flex;
+  margin-bottom:100px;
+}
+.footer div{
+  text-align:center;
+}
+.col-2{
+  flex-grow:2;
+}
+.footer div h3{
+  font-weight:300;
+  margin-bottom:30px;
+  letter-spacing:1;
+  
+}
+.col-1 a{
+  display:block;
+  text-decoration:none;
+  color:#efefef;
+  margin-bottom:10px;
+}
+.col-3{
+  color:white;
+}
+.social-icons{
+  margin-top:30px;
+}
+.social-icons i{
+  font-size:22px;
+  margin:10px;
+  cursor:pointer;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav">
+        <div class="navbar">
+      <a href="#"><img class="logo" src="/static/logo2.png" /></a>
+      
+        
+          <div class="dropdown">
+            <a href="#Women">Men</a> 
+
+            <div class="dropdown-content">
+              
+              <div class="row">
+                <div class="column">
+                  
+                <h3>TopWear</h3>
+                <a href="Tshirt">T-shirt</a>
+                <a href="#">Casual shirts</a>
+                <a href="#">Formal shirts</a>
+                <a href="#">Sweatshirts</a>
+                <a href="#">Sweaters</a>
+                <a href="#">Jackets</a>
+                <a href="#">Blazers & Coats</a>
+                <a href="#">Suits</a>
+                <a href="#">Rain Jackets</a>
+              </div>
+              <div class="column">
+                <h3>Bottomwear</h3>
+                <a href="#">Jeans</a>
+                <a href="#">Casual Trousers</a>
+                <a href="#">Formal Trousers</a>
+                <a href="#">Formal Trousers</a>
+                <a href="#">Shorts</a>
+                <a href="#">Track Pants </a>
+                <a href="#">Joggers</a>
+              </div>
+              <div class="column">
+                <h3>Footwear</h3>
+                <a href="#">Casual Shoes</a>
+                <a href="#">Sports Shoes</a>
+                <a href="#">Formal Shoes</a>
+                <a href="#">Sneakers</a>
+                <a href="#">Sandals & Floaters</a>
+                <a href="#">Flip Flops</a>
+                <a href="#">Socks</a>
+              
+              
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          <div class="dropdown">
+            <a href="#Women">Women</a>
+            <div class="dropdown-content">
+             
+              
+              <div class="row">
+                <div class="column">
+                  <h3>Indian & Fusion Wear</h3>
+                  <a href="#">Kurtas,Tunics & Tops</a>
+                  <a href="#">Sarees</a>
+                  <a href="#">Leggings,Salwar &Churidars</a>
+                  <a href="#">Skirts & palazzos</a>
+                  <a href="#">Dress Material</a>
+                  <a href="#">Lehenga Cholis</a>
+                  <a href="#">Dupattas & Shawls</a>
+                </div>
+                <div class="column">
+                  <h3>Western Wear</h3>
+                  <a href="#">Dresses</a>
+                  <a href="#">Tops</a>
+                  <a href="#">Jeans</a>
+                  <a href="#">Tshirts </a>
+                  <a href="#">Trousers & Capris </a>
+                  <a href="#">Shorts & Skirts</a>
+                  <a href="#">Playsuits</a>
+                  <a href="#">Shrugs</a>
+                  <a href="#">Sweatshirts</a>
+                  <a href="#">Jackets</a>
+                  <a href="#">Blazers & Waistcoats</a>
+                </div>
+                <div class="column">
+                  <h3>Footwear</h3>
+                  <a href="#">Flats</a>
+                  <a href="#">Casual Shoes</a>
+                  <a href="#">Heels</a>
+                  <a href="#">Boots</a>
+                  <a href="#">Sports Shoes &Floaters</a>
+                </div>
+                <div class="column">
+                  <h3>Beauty & Personal Care</h3>
+                  <a href="#">Makeup</a>
+                  <a href="#">Skincare</a>
+                  <a href="#">Premium Beauty</a>
+                  <a href="#">Lipsticks</a>
+                  <a href="#">Fragrance</a>
+                </div>
+                <div class="column">
+                  <h3>Jwellery</h3>
+                  <a href="#">Fashion jewellery</a>
+                  <a href="#">Fine jewellery</a>
+                  <a href="#">Earings</a>
+                  
+                </div>
+              </div>
+            </div>
+          </div> 
+        
+        <div class="dropdown">
+          <li><a href="" class="nav">Kids</a></li>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h3>Boys Clothing</h3>
+                <a href="#">T-shirt</a>
+                <a href="#">Shirts</a>
+                <a href="#">Shorts</a>
+                <a href="#">Jeans</a>
+                <a href="#">Trousers</a>
+                <a href="#">Clothing Sets</a>
+                <a href="#">Ethnic Wear</a>
+                <a href="#">Tracks Pants & Pyjamas</a>
+                <a href="#">Jackets,Sweaters & Sweatshirts</a>
+                <a href="#">Partywear</a>
+                <a href="#">Value Packs</a>
+              </div>
+               
+              <div class="column">
+                <h3>Girls Clothing</h3>
+                <a href="#">Dresses</a>
+                <a href="#">Tops</a>
+                <a href="#">Tshirts</a>
+                
+                <a href="#">Clothing  Sets</a>
+                <a href="#">Lehenga choli </a>
+                <a href="#">Kurta Sets</a>
+                <a href="#">Party wear</a>
+                <a href="#">Dungarees & jumpsuits</a>
+                <a href="#">Skirts</a>
+                <a href="#">Leggings</a>
+                <a href="#">Jeans , Trousers & Capris</a>
+                <a href="#">Vlue Packs</a>
+              </div>
+              <div class="column">
+                <h3>Toys</h3>
+                <a href="#">Learning & Development</a>
+                <a href="#">Activity</a>
+                <a href="#">Soft Toys</a>
+                <a href="#">Action Figure/Play set</a>
+              </div>
+              <div class="column">
+                <h3>Infants</h3>
+                <a href="#">Bodysuits</a>
+                <a href="#">Rompers & Sleepsuits</a>
+                <a href="#">Clothing sets</a>
+                <a href="#">Tshirts & Toys</a>
+                <a href="#">Bottom wear</a>
+                <a href="#">Winter wear</a>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <li><a href="" class="nav">Home-Living</a></li>
+            <div class="dropdown-content">
+              <div class="row">
+                <div class="column">
+                  <h3>Bed Linen & FUurnishing</h1>
+                    <a href="#">Bed Runners</a>
+                    <a href="#">Mattress Protectors</a>
+                    <a href="#">Bedsheets</a>
+                    <a href="#">Bedding Sets</a>
+                    <a href="#">Blankets,Quits & Dohars</a>
+                    <a href="#">Pillows & Pillow Covers</a>
+                    <a href="#">Bed Covers</a>
+                    <a href="#">Diwan Sets</a>
+                    <a href="#">Chair Pads & Covers</a>
+                    <a href="#">Sofa Covers</a>
+                  </div>
+                  <div class="column">
+                    <h3>Bath</h3>
+                    <a href="#">Bath Towels</a>
+                    <a href="#">Hand & Face Towels </a>
+                    <a href="#">Bath Robes</a>
+                    <a href="#">Bath Rugs</a>
+                    <a href="#">Bathroom Accessories</a>
+                  </div>
+                  <div class="column">
+                    <h3>Floorings</h3>
+                    <a href="#">Floor Runners</a>
+                    <a href="#">Carpets</a>
+                    <a href="#">Floor Mats & Dhurries</a>
+                  </div>
+                  <div class="column">
+                    <h3>Home Decor</h3>
+                    <a href="#">Clocks</a>
+                    <a href="#">Mirrors</a>
+                    <a href="#">Wall Decor</a>
+                    <a href="#"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+
+
+          
+  
+       
+        <div class="dropdown">
+          <li><a href="" class="nav">Beauty</a></li>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h3>Makeup</h3>
+                  <a href="#">Lipstick</a>
+                  <a href="#">Lip Gloss</a>
+                  <a href="#">Lip Liner</a>
+                  <a href="#">Mascara</a>
+                  <a href="#">Eyeliner</a>
+                </div>
+                <div class="column">
+                  <h3>Skincare</h3>
+                  <a href="#">Face Moisturiser</a>
+                  <a href="#">Cleanser</a>
+                  <a href="#">Masks & Peel</a>
+                  <a href="#">Sunscreen</a>
+                  <a href="#">Serum</a>
+                  <a href="#">Facewash</a>
+                </div>
+                <div class="column">
+                  <h3>Haircare</h3>
+                  <a href="#">Shampoo</a>
+                  <a href="#">Conditioner</a>
+                  <a href="#">Hair Cream</a>
+                  <a href="#">Hair oil</a>
+                  <a href="#">Hair gel</a>
+                </div>
+                <div class="column">
+                  <h3>Fragrances</h3>
+                  <a href="#">Perfume</a>
+                  <a href="#">Deodrant</a>
+                  <a href="#">Body Mist</a>
+                </div>
+                <div class="column">
+                  <h3>Baby care</h3>
+                  <a href="#"></a>
+                </div>
+                <div class="column">
+                  <h3>Masks</h3>
+                  <a href="#"></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+          <div class="dropdown">
+            <li><a href="" class="nav">Studio</a></li>
+            <div class="dropdown-content">
+              <div class="row">
+                <div class="column">
+                  <h3>Category 1</h3>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                  <div class="column">
+                    <h3>Category</h3>
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                  <div class="column">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="gallery">
+            <a class="fa fa-shopping-bag white-color" href="#" style="font-size:18px;float:right;margin-top:0px;text-decoration:none;">
+              
+            </a>
+              <div class="desc">Bag</div>
+              </div>
+            
+
+            <div class="gallery">
+
+            <a class="fa fa-heart-o" href="#" style="font-size:18px;float:right;margin-top:0px;text-decoration:none;"></a>
+            <div class="desc">Wishlist</div>
+            </div>
+
+
+         <center>
+            <div  class="gallery">
+             
+               <div class="dropdown_profile">
+                
+            <a class="fa fa-user-o" href="profile" style="font-size:18px;float:right ;margin-top:0px;text-decoration:none;"> </a>
+             
+            
+            <div class="dropdown-content_profile">
+              <div class="row">
+              
+                
+                  <h3 style="color:black;">WELCOME</h3>
+                  <P style="font:16px pacifico;">To access account and manage orders</p>
+                    <button class="button" type="submit" style="background-color:black; border-radius:8px; color:white;border-size:-10px;" > <a style="color:white;" href="profile">Login </a></button><br>
+                    <li>
+                     
+                    <a class="profile-a" href="#" >Orders</a><br>
+                    <a class="profile-a" href="#" >Wishlist</a><br>
+                     <a class="profile-a" href="#" >Gift Cards</a><br>
+                    <a class="profile-a" href="#" >Myntra Insider</a><br>
+                    <a class="profile-a" href="#" >orders</a><br>
+                    <a class="profile-a" href="#" >orders</a><br>
+                    
+                    </li>
+    
+                 
+                  </div>
+              </div>
+            </div>
+       
+           
+            <div class="desc">Profile</div>
+            </div>
+           
+        <input type="text"  placeholder="Search for product brand and more..">
+          </div>
+        </div>
+      </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+     
+<center>
+     
+        <div class="slideshow-container" style="margin-top:-60px;">
+
+<div class="mySlides fade">
+  
+  <img src="/static/front page images.webp" >
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="/static/haircare.jpg" >
+ 
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="/static/image3.jpg" >
+
+</div>
+<div class="mySlides fade">
+  
+  <img src="/static/picture1.jpg" >
+
+</div>
+<div class="mySlides fade">
+  
+  <img src="/static/perfume.jpg" >
+
+</div>
+<div class="mySlides fade">
+  
+  <img src="/static/Online-image2.jpg" >
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)"></a>
+<a class="next" onclick="plusSlides(1)"></a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</center>
+<br>
+<center>
+        
+<h4> CRAZY DEALS</h4>
+<p>Mad Discounts This Way</p>
+
+
+<button class="button" type="submit" style="background-color:black; border-radius:8px; color:white;"> View all
+  <img src="/static/right_arrow.png" class="icon" height="35"/>
+</button>
+</center>
+
+</center>
+<div class="ro">
+  <div class="col">
+  <a >
+    <img class="Pra" src="/static/western wear.jpg" alt="Cinque Terre" >
+  </a>
+  <div class="descrip" > <center><img src="/static/western_logo.jpg" style="width:40px;height:29px;text-decoration:none;"></center><center>Stylish Picks</center><br>Min.70% + Extra20% Off 
+  </div>
+</div>
+<div class="col">
+  <a >
+    <img class="Pra" src="/static/traditional.jpg" alt="Cinque Terre" >
+  </a>
+  <div class="descrip" style="margin:-1px;text-align:center;margin-top:1px;"> <center><img src="/static/sai.jpg" style="width:40px;height:32px;text-decoration:none"></center><br><center>Traiditional </center><br></div>
+</div>
+
+
+<div class="col">
+  <a>
+    <img class="pra" src="/static/western wear2.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center"><center><img  src="/static/western_logo2.jpg" style="width:40px;height:39px;text-decoration:none"></center>Western wear</div>
+</div>
+        
+       
+        
+<div class="col">
+  <a>
+    <img class="pra" src="/static/kurta.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center;"><img src="/static/kurti-logo.jpg" style="width:46px;height:45px;text-decoration:none;text-align_center;"></center><br>kurtas</div>
+</div>
+        
+       
+        
+<div class="col">
+  <a>
+    <img class="pra" src="/static/kurta sets.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center;"><img src="/static/kurti-logo.jpg" style="width:46px;height:45px;text-decoration:none;text-align_center;" ><br>Kurta sets</div>
+</div>
+
+
+<div class="col">
+  <a>
+    <img class="pra" src="/static/styles img.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center;"><img src="/static/dress_logo.jpg" style="width:39px;height:37px;text-decoration:none;text-align_center;" ><br>styles</div>
+</div>
+<div class="col">
+  <a>
+    <img class="pra" src="/static/jeans.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center;"><img src="/static/jeans_logo.jpg"style="width:35px;height:36px;text-decoration:none;text-align:center;" ><br>Jeans</div>
+</div>
+
+<div class="col">
+  <a>
+    <img class="pra" src="/static/trendy jeans.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center"><img src="/static/kelvin.jpg" style="width:45px;height:40px;text-decoration:none;text-align_center;"><br>Trendy Jeans</div>
+</div>
+
+
+
+</div>
+
+
+<div class="ro">
+<div class="col">
+  <a>
+    <img class="pra" src="/static/tshirts.webp" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center;"><img src="/static/nike.jpg" style="width:45px;height:40px;text-decoration:none;text-align_center;"><br>Tshirts</div>
+</div>
+<div class="col">
+  <a>
+    <img class="pra" src="/static/top.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center;"><img src="static/adidas.png" style="width:45px;height:40px;text-decoration:none;text-align_center;"><br>Top</div>
+</div>
+<div class="col">
+  <a>
+    <img class="pra" src="/static/track-pants.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center"><img src="/static/nike.jpg" style="width:45px;height:40px;text-decoration:none;text-align_center;"><br>Track pants</div>
+</div>
+<div class="col">
+  <a>
+    <img class="pra" src="/static/dresses.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center;"><img src="/static/dress_logo.jpg" style="width:45px;height:40px;text-decoration:none;text-align_center;"><br>Dresses</div>
+</div>
+<div class="col">
+  <a>
+    <img class="pra" src="/static/active wear.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center;"><img src="/static/nike.jpg"  style="width:45px;height:40px;text-decoration:none;text-align_center;"><br>Active Wears</div>
+</div>
+<div class="col">
+  <a>
+    <img class="pra" src="/static/denim.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center;"><img src="/static/lee_logo.jpg"  style="width:45px;height:40px;text-decoration:none;text-align_center;"><br>Denim</div>
+</div>
+<div class="col">
+  <a>
+    <img class="pra" src="/static/smaert tshirt.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center;"><img src="/static/ck_logo.jpg"style="width:45px;height:40px;text-decoration:none;text-align_center;"><br>smart tshirt</div>
+</div>
+<div class="col">
+  <a>
+    <img class="pra" src="/static/kurta women.jpg" alt="Forest" >
+  </a>
+  <div class="descrip" style="text-align:center;"><img src="/static/kurti-logo.jpg" style="width:45px;height:40px;text-decoration:none;text-align_center;"><br>kurta set</div>
+</div>
+
+</div ><br><br>
+<h4 class="down h3" style="margin-left:15px;font-size:25px;"> TOP PICKS</h4><br><br>
+<div class="ro" style="margin-left:20px;margin-right:-34px;">
+  <div class="col" style="background-color:rgba(180, 70, 60, 0.3);margin:10px;">
+
+  <a>
+    <img class="pra" src="/static/KURTASET2.jpg" alt="kurta" style="width:170px;height:150px;">
+  </a>
+  <div class="descrip" style="text-align:center;height:10%;"><br>Kurta Set<br>Under $10</div>
+</div>
+<div class="col" style="background-color:rgba(180, 70, 60, 0.3);margin:10px;">
+
+  <a>
+    <img class="pra" src="/static/kurta2.jpg" alt="kurta" style="width:170px;height:150px;">
+  </a>
+  <div class="descrip" style="text-align:center;height:10%;"> <br>Kurta <br>Under $20</div>
+</div>
+<div class="col" style="background-color:rgba(180, 70, 60, 0.3);margin:10px;">
+
+  <a>
+    <img class="pra" src="/static/trouser.jpg" alt="kurta" style=";width:170px;height:150px;">
+  </a>
+  <div class="descrip" style="text-align:center;height:10%;"><br> Trousers <br>Under $20</div>
+</div>
+<div class="col" style="background-color:rgba(180, 70, 60, 0.3);margin:10px;">
+
+  <a>
+    <img class="pra" src="/static/dress 2.jpg" alt="kurta" style="width:170px;height:150px;">
+  </a>
+  <div class="descrip" style="text-align:center;height:10%;"><br> Dresses <br>Under $20</div>
+</div>
+<div class="col" style="background-color:rgba(180, 70, 60, 0.3);margin:10px;">
+
+  <a>
+    <img class="pra" src="/static/casual shirt.jpg" alt="kurta" style="width:170px;height:150px;">
+  </a>
+  <div class="descrip" style="text-align:center;height:10%;"><br> Shirts <br>Under $20</div>
+</div>
+<div class="col" style="background-color:rgba(180, 70, 60, 0.3);margin:10px;">
+
+  <a>
+    <img class="pra" src="/static/jeans2.jpg" alt="kurta" style="width:170px;height:150px;">
+  </a>
+  <div class="descrip" style="text-align:center;height:10%;"><br> Jeans <br>Under $20</div>
+</div>
+<div class="col" style="background-color:rgba(180, 70, 60, 0.3);margin:10px;">
+
+  <a>
+    <img class="pra" src="/static/tshirt2.jpg" alt="kurta" style="width:170px;height:150px;">
+  </a>
+  <div class="descrip" style="text-align:center;height:10%;"><br> T-shirts <br>Under $20</div>
+</div>
+</div>
+<br>
+<br>
+<h4 >CATEGORIES TO BAGS<h4><BR>
+  <BR>
+    <div class="ro">
+      <div class="col">
+        <a>
+          <img class="bac" class="bac" src="/static/kurti set.jpg" style="border-radius:50%;" >
+        </a>
+        <div class="descrip" ><center>    Suit</center></div>
+      </div>
+    
+    
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/handbag.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><center>Handbags</center></div>
+      </div>
+    
+    
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/kurtas.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><center>Kurtas</center></div>
+      </div>
+    
+  
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/tshirt3.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><center>T-shirts</center></div>
+      </div>
+    
+    
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/saree.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><center>Saree</center></div>
+      </div>
+    
+
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/shorts.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><center>Comfort shorts</center></div>
+      </div>
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/trouser.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><center>Trousers</center></div>
+      </div>
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/shirts.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><center>    Shirts</center></div>
+      </div>
+    </div>
+    <div class="ro">
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/dress_to_love.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><cente>Dress to love</center></div>
+      </div>
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/fun_and_cool.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><cente>Fun and cool</center></div>
+      </div>
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/fragrance2.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><center>Ready to smell</center></div>
+      </div>
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/haircare.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><center>Hair care</center></div>
+      </div>
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/skirts.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><center>Skirts</center></div>
+      </div>
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/work wear.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><center>Work wear</center></div>
+      </div>
+      <div class="col">
+        <a>
+          <img class="bac" src="/static/casual.jpg" style="border-radius:50%;">
+        </a>
+        <div class="descrip" ><center>Casuals</center></div>
+      </div>
+      <div class="col" >
+      
+        <a>
+          <img class="bac" src="/static/beauty brands.jpg" style="border-radius:50%;background-color:blue;">
+        </a>
+        <div class="descrip" ><center>Beauty brands</center></div>
+      </div>
+      <div>
+        <br>
+
+
+        <br>
+        
+        <h3 style="color:black;"><BR><br><br>SHOP BY CATEGORY</h3>
+          <br>
+          <br>
+          <div class="ro">
+            <div class="col">
+               <a>
+                <figure>
+          <img src="/static/ethnic wear0.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Ethnic wear<br>50-60% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+            <div class="col">
+               <a>
+                <figure>
+          <img src="/static/casual 0.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Casual wear<br>50-70% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+            <div class="col">
+               <a>
+                <figure>
+          <img src="/static/active wear 0.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Active wear<br>40-50% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+            <div class="col">
+               <a>
+                <figure>
+          <img src="/static/western wear 0.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Western wear<br>50-60% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+            <div class="col">
+               <a>
+                <figure>
+          <img src="/static/sports wear0.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Sports wear<br>50-60% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+            <div class="col">
+               <a>
+                <figure>
+          <img src="/static/lounge wear0.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Lounge wears<br>50-60% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+            <div class="col">
+               <a>
+                <figure>
+          <img src="/static/sleep wear0.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Sleep wear<br>40-50% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+            <div class="col">
+               <a>
+                <figure>
+          <img src="/static/shorts.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Shorts<br>40-50% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      <div class="ro">
+        <div class="col">
+               <a>
+                <figure>
+          <img src="/static/grooming0.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Grooming<br>50-60% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+        <div class="col">
+               <a>
+                <figure>
+          <img src="/static/jwellery0.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Jwelleries<br>20-30% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+        <div class="col">
+               <a>
+                <figure>
+          <img src="/static/headphones0.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Headphones<br>40-50% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+        <div class="col">
+               <a>
+                <figure>
+          <img src="/static/eye 0.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Eyewear<br>50-60% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+        <div class="col">
+               <a>
+                <figure>
+          <img src="/static/perfume.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Fragrance<br>40-50% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+        <div class="col">
+               <a>
+                <figure>
+          <img src="/static/styles img.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>styles<br>50-60% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+        <div class="col">
+               <a>
+                <figure>
+          <img src="/static/watches.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Watches<br>40-50% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+        <div class="col">
+               <a>
+                <figure>
+          <img src="/static/work wear.jpg" style="width:170px;height:250px;">
+                </figure>
+                <center>
+                <figcaption>Work wear<br>40-50% off<br>Shop Now</figcaption>
+                </center>
+        </a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+      <div class="ro" >
+         <center>
+        <div class="col" >
+        <a>
+        <figure>
+        <img src="/static/bagpack0.jpg" style="width:170px;height:250px;">
+        </figure>
+        <center>
+        <figcaption>Bagpacks<br>40-50% off<br>Shop Now</figcaption>
+        </center>
+        </a>
+      </div>
+        <div class="col">
+        <a>
+        <figure>
+        <img src="/static/trolley2.jpg" style="width:170px;height:250px;">
+        </figure>
+        <center>
+        <figcaption>Trolley bags<br>40-50% off<br>Shop Now</figcaption>
+        </center>
+        </a>
+      </div>
+        <div class="col">
+        <a>
+        <figure>
+        <img src="/static/footwaer.jpg" style="width:170px;height:250px;">
+        </figure>
+        <center>
+        <figcaption>Footwears<br>40-50% off<br>Shop Now</figcaption>
+        </center>
+        </a>
+      </div>
+       </center>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<div class="footer">
+  <div class="col-1">
+<h3>ONLINE SHOPPING</h3>
+<a href="#">Mens</a>
+<a href="#">WOmen</a>
+<a href="#">Kids</a>
+<a href="#">Home&Living</a>
+<a href="#">Beauty</a>
+<a href="#">Gift cards</a>
+</div>
+
+  <div class="col-1">
+    <h3>CUSTOMER POLICIES</h3>
+    <a href="#">Contact us</a>
+<a href="#">FAQ</a>
+<a href="#">T&C</a>
+<a href="#">Terms of use</a>
+<a href="#">Track order</a>
+<a href="#">Shipping</a>
+<a href="#">Return policy</a>
+<a href="#">Offers</a>
+    
+  </div>
+  <div class="col-3">
+  <h3>CONTACT</h3>
+  <p style="color:white;">123,XYZ road,BSK 3<br>Bhopal,Madhya Pradesh</p>
+  <div class="social-icons">
+    
+  <i class="fab fa-behance"></i>
+    <i class="fab fa-instagram"></i>
+    
+     <i class="fab fa-facebook"></i>
+     <i class="fab fa-twitter"></i>
+    
+
+  </div>
+    
+ 
+  
+     </div>
+     <div>
+      <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+    <span class="sr-only">Loading...</span>
+     </div>
+
+</div>
+
+
+          
+
+        
+              
+
+
+        
+        
+       
+        
+    
+    
+  </body>
+</html>
+
